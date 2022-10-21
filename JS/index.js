@@ -11,27 +11,27 @@ inputs.forEach((input) => {
 
         switch (e.target.name) {
             case "celsius":
-                fahrenheit.value = value * 1.8 + 32;
-                kelvin.value = value + 273.15;
-                rankine.value = (value + 273.15) * 1.8;
+                fahrenheit.value = parseFloat(value * 1.8 + 32).toFixed(2);
+                kelvin.value = parseFloat(value + 273.15).toFixed(2);
+                rankine.value = parseFloat((value + 273.15) * 1.8).toFixed(2);
                 break;
 
             case "fahrenheit":
-                celsius.value = (value - 32) / 1.8;
-                kelvin.value = value - 32 * 1.8 + 273;
-                rankine.value = value + 459.67;
+                celsius.value = parseFloat((value - 32) / 1.8).toFixed(2);
+                kelvin.value = parseFloat(value - 32 * 1.8 + 273).toFixed(2);
+                rankine.value = parseFloat(value + 459.67).toFixed(2);
                 break;
 
             case "kelvin":
-                celsius.value = value - 273.15;
-                fahrenheit.value = (value - 273.15) * 1.8 + 32;
-                rankine.value = value * 1.8;
+                celsius.value = parseFloat(value - 273.15).toFixed(2);
+                fahrenheit.value = parseFloat((value - 273.15) * 1.8 + 32).toFixed(2);
+                rankine.value = parseFloat(value * 1.8).toFixed(2);
                 break;
 
             case "rankine":
-                celsius.value = value / 1.8 - 273.15;
-                fahrenheit.value = value - 459.67;
-                kelvin.value = value / 1.8;
+                celsius.value = parseFloat(value / 1.8 - 273.15).toFixed(2);
+                fahrenheit.value = parseFloat(value - 459.67).toFixed(2);
+                kelvin.value = parseFloat(value / 1.8).toFixed(2);
                 break;
         }
     });
