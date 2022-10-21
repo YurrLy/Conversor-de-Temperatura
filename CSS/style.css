@@ -1,0 +1,64 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+}
+    
+html {
+    font-size: 1vh;
+}
+
+body {
+    background-color: rgb(42, 51, 66);
+    display: flex;
+    justify-content: center;
+}
+
+#div-conversor {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#titulo {
+    padding-top: 5vmin;
+    font-family: 'Lato', Arial,  sans-serif;
+    font-size: 5rem;
+    color: #fff;
+    word-spacing: 2vmin;
+    margin-bottom: 5vmin;
+    text-align: center;
+}
+
+#entrada-temperatura {
+    margin: 6vmin 3vmin 3vmin 3vmin;
+    font-family: 'Lato', Arial,  sans-serif;
+    font-size: 3rem;
+}
+
+#div-conversor label {
+    margin-top: 2vmin;
+    font-size: 3rem;
+    text-align: center;
+    font-family: 'Lato', Arial,  sans-serif;
+    color: #fff;
+}
+
+#celsius, #kelvin, #fahrenheit, #rankine {
+    margin-top: 1vmin;
+    margin-bottom: 2vmin;
+    font-family: 'Lato', Arial,  sans-serif;
+    font-size: 3rem;
+    outline: none;
+    padding: 0.5vmin;
+    border-radius: 1vmin;
+}
+
+/* #botao {
+    cursor: pointer;
+    margin: 5vmin 10vmin 0 10vmin;
+    border: none;
+} */
+
